@@ -196,8 +196,13 @@ body {
 #detailsf #card img,
 #detailpf #card img,
 #detailc #card img {
-  height: 200px;
-  width: 200px;
+  margin: 0px 15px;
+  margin-top: 40px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: rgb(238, 36, 0,0.7);
 }
 
 #detailpg #card #data,
@@ -256,6 +261,6 @@ body {
 
 #up a img{
   object-fit: cover;
-  height: 20px;
-  width: 20x;
+  height: 30px;
+  width: 30x;
 }
