@@ -41,7 +41,7 @@ body {
 }
 
 #position h2 {
-  font-family: 'Gabarito',cursive;
+  font-family: "Gabarito", cursive;
   text-align: center;
   font-size: 70px;
   color: white;
@@ -79,10 +79,10 @@ body {
 }
 
 #position #p-pg:hover {
-    filter: none;
-    transform: scale(1.2);
-    margin-right: 20px;
-  }
+  filter: none;
+  transform: scale(1.2);
+  margin-right: 20px;
+}
 
 #position #p-sg {
   background-image: url(position/sg.jpg);
@@ -142,4 +142,120 @@ body {
   filter: none;
   transform: scale(1.2);
   margin-left: 20px;
+}
+
+#detailpg,
+#detailsg,
+#detailsf,
+#detailpf,
+#detailc {
+  margin-top: -100px;
+  background-color: rgb(238, 36, 0);
+  padding: 50px 0px 200px 0px;
+}
+#detailpg h1,
+#detailsg h1,
+#detailsf h1,
+#detailpf h1,
+#detailc h1 {
+  font-family: "Gabarito", cursive;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+#detailpg .grid-card,
+#detailsg .grid-card,
+#detailsf .grid-card,
+#detailpf .grid-card,
+#detailc .grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+
+#detailpg #card,
+#detailsg #card,
+#detailsf #card,
+#detailpf #card,
+#detailc #card {
+  margin: 5px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-image: url(club/bu.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position-x: -130px;
+  background-position-y: 30px;
+  background-color: rgb(240, 248, 255);
+  border-radius: 25px;
+  padding: 20px 0px;
+}
+#detailpg #card img,
+#detailsg #card img,
+#detailsf #card img,
+#detailpf #card img,
+#detailc #card img {
+  height: 200px;
+  width: 200px;
+}
+
+#detailpg #card #data,
+#detailsg #card #data,
+#detailsf #card #data,
+#detailpf #card #data,
+#detailc #card #data {
+  margin-top: -10px;
+  grid-column: 2 / span 3;
+}
+
+#detailpg #card #data h3,
+#detailsg #card #data h3,
+#detailsf #card #data h3,
+#detailpf #card #data h3,
+#detailc #card #data h3 {
+  font-family: "Gabarito", sans-serif;
+  font-size: xx-large;
+}
+
+#detailpg #card #data #stat,
+#detailsg #card #data #stat,
+#detailsf #card #data #stat,
+#detailpf #card #data #stat,
+#detailc #card #data #stat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: -175px 100px -100px 1230px;
+  padding: 2px;
+  border-radius: 100px;
+}
+
+#up #atas{
+  height: 15px;
+  width: 15px;
+  padding: 20px 20px;
+}
+
+#up a{
+  background-color: black;
+  padding: 15px 20px;
+  border-radius: 50px;
+  scroll-behavior: smooth;
+  transition: 0.2s;
+}
+
+#up a:hover{
+    background-color: rgb(51, 51, 51);
+}
+
+#up a img{
+  object-fit: cover;
+  height: 20px;
+  width: 20x;
 }
