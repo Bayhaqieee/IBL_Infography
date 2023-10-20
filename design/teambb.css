@@ -1,0 +1,285 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0px;
+}
+
+#club {
+  background-image: url(club/bb.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: -250px;
+  background-position-y: -50px;
+  background-size: 750px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#club div {
+  grid-column: 1 / span 4;
+  background: linear-gradient(180deg, transparent, green);
+  padding: 200px 300px 50px 300px;
+}
+
+#club div h1 {
+  color: goldenrod;
+  font-family: "Montserrat", sans-serif;
+  font-size: 140px;
+  margin-top: -150px;
+  margin-left: 150px;
+}
+
+#club div p {
+  font-size: xx-large;
+  margin-left: 170px;
+  margin-top: -100px;
+  opacity: 0.7;
+}
+
+#position {
+  background-color: green;
+  margin-top: 0px;
+  padding: 5px 0px 150px 0px;
+}
+
+#position h2 {
+  font-family: "Gabarito", cursive;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+#position ul {
+  display: grid;
+  list-style: none;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 10px;
+  margin: 0px 50px;
+}
+
+#position ul a {
+  text-decoration: none;
+}
+
+#position ul a p {
+  font-size: 50px;
+  font-family: "UnifrakturCook", cursive;
+  color: white;
+  text-shadow: 3px 3px 0px rgb(0, 0, 0, 0.9);
+  padding: 50px 30px;
+  z-index: 1000;
+}
+
+#position #p-pg {
+  background-image: url(position/pg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
+#position #p-pg:hover {
+  filter: none;
+  transform: scale(1.2);
+  margin-right: 20px;
+}
+
+#position #p-sg {
+  background-image: url(position/sg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+
+#position #p-sg:hover {
+  filter: none;
+  transform: scale(1.2);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#position #p-sf {
+  background-image: url(position/sf.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+#position #p-sf:hover {
+  filter: none;
+  transform: scale(1.2);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#position #p-pf {
+  background-image: url(position/pf.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+#position #p-pf:hover {
+  filter: none;
+  transform: scale(1.2);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#position #p-c {
+  background-image: url(position/c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  scroll-behavior: smooth;
+  transition: 0.3s;
+}
+#position #p-c:hover {
+  filter: none;
+  transform: scale(1.2);
+  margin-left: 20px;
+}
+
+#detailpg,
+#detailsg,
+#detailsf,
+#detailpf,
+#detailc {
+  margin-top: -100px;
+  background-color: green;
+  padding: 0px 0px 100px 0px;
+}
+#detailpg h1,
+#detailsg h1,
+#detailsf h1,
+#detailpf h1,
+#detailc h1 {
+  font-family: "Gabarito", cursive;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+}
+
+#detailpg .grid-card,
+#detailsg .grid-card,
+#detailsf .grid-card,
+#detailpf .grid-card,
+#detailc .grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px 20px 20px;
+}
+
+#detailpg #card,
+#detailsg #card,
+#detailsf #card,
+#detailpf #card,
+#detailc #card {
+  margin: 5px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-image: url(club/bb.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position-x: -100px;
+  background-position-y: 0px;
+  background-color: rgb(240, 248, 255);
+  border-radius: 25px;
+  padding: 20px 0px;
+}
+
+#detailpg #card-empty,
+#detailsg #card-empty,
+#detailsf #card-empty,
+#detailpf #card-empty,
+#detailc #card-empty {
+  margin: 5px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-image: url(club/bb.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: -15px;
+  background-color: rgb(240, 248, 255);
+  border-radius: 25px;
+  padding: 20px 0px;
+}
+#detailpg #card img,
+#detailsg #card img,
+#detailsf #card img,
+#detailpf #card img,
+#detailc #card img {
+  margin: 0px 15px;
+  margin-top: 40px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-color: rgb(0, 128, 0,0.9);
+}
+
+#detailpg #card #data,
+#detailsg #card #data,
+#detailsf #card #data,
+#detailpf #card #data,
+#detailc #card #data {
+  margin-top: -10px;
+  grid-column: 2 / span 3;
+}
+
+#detailpg #card #data h3,
+#detailsg #card #data h3,
+#detailsf #card #data h3,
+#detailpf #card #data h3,
+#detailc #card #data h3 {
+  font-family: "Gabarito", sans-serif;
+  font-size: xx-large;
+}
+
+#detailpg #card #data #stat,
+#detailsg #card #data #stat,
+#detailsf #card #data #stat,
+#detailpf #card #data #stat,
+#detailc #card #data #stat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#up {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: -90px 100px -100px 1220px;
+  padding: 2px;
+  border-radius: 100px;
+}
+
+#up #atas{
+  height: 15px;
+  width: 15px;
+  padding: 15px 15px;
+}
+
+#up a{
+  background-color: goldenrod;
+  padding: 25px 20px;
+  border-radius: 50px;
+  scroll-behavior: smooth;
+  transition: 0.2s;
+}
+
+#up a:hover{
+    background-color: rgb(170, 130, 27);
+}
+
+#up a img{
+  object-fit: cover;
+  height: 15px;
+  width: 15x;
+}

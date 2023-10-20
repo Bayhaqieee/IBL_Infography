@@ -191,6 +191,25 @@ body {
   border-radius: 25px;
   padding: 20px 0px;
 }
+
+#detailpg #card-empty,
+#detailsg #card-empty,
+#detailsf #card-empty,
+#detailpf #card-empty,
+#detailc #card-empty {
+  margin: 5px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-image: url(club/bu.png);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 20px;
+  background-color: rgb(240, 248, 255);
+  border-radius: 25px;
+  padding: 20px 0px;
+}
+
 #detailpg #card img,
 #detailsg #card img,
 #detailsf #card img,
