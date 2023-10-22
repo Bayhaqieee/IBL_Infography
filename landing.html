@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indonesia Basketball League</title>
+    <link rel="icon" href="design/club/ibl.png" />
+    <link rel="stylesheet" href="design/landing.css" />
+    <link rel="stylesheet" href="design/shared.css" />
+    <link rel="stylesheet" href="design/teambb.css" />
+    <link rel="stylesheet" href="design/shared.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Josefin+Sans:wght@400;500;600;700&family=Montserrat:wght@300;500;600;700;800&family=Satisfy&family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="navbar">
+      <div id="pagehome">
+        <a href="team.html"
+          ><img src="design/club/ibl.png" alt="Team Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul id="">
+          <li><a href="">Home</a></li>
+          <li><a href="#position">Position</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="show">
+      <img src="design/club/ibl.png" alt="Indonesia Basketball League" />
+      <h3>
+        Selamat Datang di Website Fandom Indonesia <br />Basketball League!
+      </h3>
+    </div>
+    <div id="display">
+      <h4>
+        Kami bangga menyajikan platform ini sebagai sumber utama informasi
+        kompetisi basket terkemuka di Indonesia, dengan akses cepat ke statistik
+        pemain dan profil tim untuk penggemar basket sejati.
+      </h4>
+      <div id="slideshow">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="design/supp img/1.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="design/supp img/2.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="design/supp img/3.jpeg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="design/supp img/4.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="design/supp img/5.jpg" style="width: 100%" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </div>
+    <div id="clubdesc">
+      <h3>
+        Join Us!
+      </h3>
+      <div id="clublist">
+          <a><img src="design/club/bu.png" alt="Bali United" /></a>
+          <a><img src="design/club/bpj.png" alt="Wira Praja Jogja" /></a>
+          <a><img src="design/club/bb.png" alt="Bumi Borneo" /></a>
+          <a><img src="design/club/dub.png" alt="" /></a>
+          <a><img src="design/club/epc.png" alt="" /></a>
+          <a><img src="design/club/evos.png" alt="" /></a>
+          <a><img src="design/club/inp.png" alt="" /></a>
+          <a><img src="design/club/mgt.png" alt="" /></a>
+          <a><img src="design/club/phb.png" alt="" /></a>
+          <a><img src="design/club/pjb.png" alt="" /></a>
+          <a><img src="design/club/rans.png" alt="" /></a>
+          <a><img src="design/club/rjah.png" alt="" /></a>
+          <a><img src="design/club/smp.png" alt="" /></a>
+          <a><img src="design/club/sws.png" alt="" /></a>
+          <a><img src="design/club/ths.png" alt="" /></a>
+          <a><img src="design/club/wb.png" alt="" /></a>
+      </div>
+    </div>
+    <footer></footer>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
