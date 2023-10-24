@@ -251,37 +251,3 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-#up {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: -90px 100px -100px 1220px;
-  padding: 2px;
-  border-radius: 100px;
-}
-
-#up #atas{
-  height: 15px;
-  width: 15px;
-  padding: 15px 15px;
-}
-
-#up a{
-  background-color: #ff7300;
-  padding: 25px 20px;
-  border-radius: 50px;
-  scroll-behavior: smooth;
-  transition: 0.2s;
-}
-
-#up a:hover{
-    background-color: #e86b05;
-}
-
-#up a img{
-  margin-left: 12px;
-  object-fit: cover;
-  height: 20px;
-  width: 20x;
-}
