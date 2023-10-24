@@ -71,7 +71,7 @@ body {
 }
 
 #position #p-pg {
-  background-image: url(../../images/position/pg.jpeg);
+  background-image: url(position/pg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
@@ -86,7 +86,7 @@ body {
 }
 
 #position #p-sg {
-  background-image: url(../../images/position/sg.jpg);
+  background-image: url(position/sg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
@@ -102,7 +102,7 @@ body {
 }
 
 #position #p-sf {
-  background-image: url(../../images/position/sf.jpeg);
+  background-image: url(position/sf.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
@@ -117,7 +117,7 @@ body {
 }
 
 #position #p-pf {
-  background-image: url(../../images/position/pf.jpeg);
+  background-image: url(position/pf.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
@@ -132,14 +132,13 @@ body {
 }
 
 #position #p-c {
-  background-image: url(../../images/position/c.jpg);
+  background-image: url(position/c.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
   scroll-behavior: smooth;
   transition: 0.3s;
 }
-
 #position #p-c:hover {
   filter: none;
   transform: scale(1.2);

@@ -7,6 +7,19 @@ body{
     font-family: 'Gabarito',sans-serif;
 }
 
+nav #pagehome a{
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
+}
+
+#pagehome a img{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+
 .wrapper {
     margin: 0;
     padding: 0;
