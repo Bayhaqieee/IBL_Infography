@@ -4,6 +4,7 @@ body{
 text-align: center;
 background: linear-gradient(180deg, #F6F4EB,#4682A9);
 font-family: 'Gabarito',sans-serif;
+color: white;
 }
 
 #show{
@@ -54,47 +55,6 @@ font-family: 'Gabarito',sans-serif;
 
 #display #slideshow .mySlides {
   display: none;
-}
-
-#display #slideshow .prev{
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  margin-top: -210px;
-  margin-right: 60px;
-  margin-left: -10px;
-  padding: 16px 16px 16px 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-#display #slideshow .next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  margin-top: -210px;
-  margin-right: 60px;
-  margin-left: 60px;
-  padding: 16px 16px 16px 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-#display #slideshow .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-#display #slideshow .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 #display #slideshow .text {
