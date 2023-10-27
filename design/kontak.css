@@ -15,9 +15,8 @@ body {
 
 h1 {
     color: #91C8E4;
-    font-family: gabarito;
+    font-family: 'Gabarito',sans-serif;
     font-size: 100px;
-    -webkit-text-stroke: 1px #F6F4EB;
 }
 
 .row1, .row2, .row3 {
