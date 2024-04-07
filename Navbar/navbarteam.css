@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton&family=Poppins&family=Oswald&family=Vina+Sans&display=swap");
+
+nav {
+  height: 80px;
+  transition: 0.3s;
+}
+
+.container-fluid img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-toggler {
+  transition: 0.3s;
+  background-color: black;
+}
+
+.logo-ibl {
+  font-family: "Gabarito", sans-serif;
+  font-size: 35px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.link-nav {
+    text-decoration: none;
+    font-family: "Gabarito";
+    font-size: 20px;
+}
+
+.offcanvas-header {
+  padding: 25px;
+}
+
+.offcanvas-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.offcanvas-header h5 {
+  font-family: "Gabarito",sans-serif;
+  font-size: 20px;
+}
+
+.dropdown-item {
+    font-family: "Gabarito",sans-serif;
+}
+
+/* darkmode */
+.darkmode {
+    padding-top: 10px;
+}
+
+label {
+  position: relative;
+  width: 120px;
+  height: 60px; 
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: 1s ease;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  transition: 0.8s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  transition: 0.8s ease;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.18);
+}
+
+.toggle:checked ~ label::after {
+  left: 80px;
+}
+
+.toggle:checked ~ label::before {
+  left: 80px;
+}
+
+
+.toggle:checked ~ label {
+  background-size: cover;
+  background-position: center;
+}
+
+.toggle {
+  display: none;
+}
