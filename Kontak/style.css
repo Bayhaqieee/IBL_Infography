@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-first: #395886;
+  --blue-body: #d5deef;
+  --white: #f0f3fa;
+  --stroke-color: #f0f3fa;
+  --text-color: #000000;
+  --blue-dropdown: #4268a2;
+  --blue-dropdown-hover: #2f4d7a;
+  --shadow-nav: 0 2px 10px 2px #000000;
+}
+
+.dark-mode {
+  --blue-first: #022B42;  
+  --blue-body: #032030;
+  --stroke-color: #000000;
+  --text-color: #f0f3fa;
+  --blue-dropdown: #022234;
+  --blue-dropdown-hover: #021d2d;
+  --shadow-nav: 0 2px 10px 2px #f0f3fa;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--blue-body);
+  }
+
+/* nav */
+nav {
+  background-color: var(--blue-first);
+  box-shadow: var(--shadow-nav);
+}
+
+.offcanvas-header {
+  background-color: var(--blue-first);
+  color: var(--white);
+}
+
+.logo-ibl {
+    color: var(--white);
+  }
+
+.offcanvas-body {
+  background-color: var(--blue-first);
+  color: var(--text-color);
+}
+
+.dropdown-menu li a {
+    color: var(--white);
+  }
+
+.dropdown-menu {
+  background-color: var(--blue-dropdown);
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--blue-dropdown-hover);
+  color: var(--white);
+}
+
+h1 {
+  color: var(--text-color);
+  font-weight: bold;
+  font-family: gabarito;
+  font-size: 120px;
+}
+
+.row1 {
+  justify-content: center;
+  display: flex;
+  margin-top: 125px;
+  width: 100%;
+}
+
+.row2,
+.row3 {
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1.5s;
+  font-family: gabarito;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  margin: 0;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #f6f4eb;
+  background-image: linear-gradient(
+    300deg,
+    #f6f4eb 0%,
+    #91c8e4 50%,
+    #f6f4eb 100%
+  );
+
+  padding: 15px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 2px black;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: large;
+  letter-spacing: 1.5px;
+}
+
+.card .back .link a:hover {
+  color: black;
+}
+
+.card .back h3 {
+  font-size: 28px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 1.15px;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}

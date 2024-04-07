@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Teams</title>
+    <link rel="shortcut icon" href="../images/svg/ibl.svg" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Navbar/navbarmain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Josefin+Sans:wght@400;500;600;700&family=Montserrat:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+          <img src="../images/logo/ibl.png" alt="logo Indonesia Basketball League">
+          <a class="navbar-brand logo-ibl" href="#">Indonesia Basketball League</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <img src="../images/logo/ibl.png" alt="logo Indonesia Basketball League">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Indonesia Basketball League
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../Home/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">All Teams</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Profile Player
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../Profile player/Bali United/teambu.html">Bali United Basketball</a></li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li><a class="dropdown-item" href="../Profile player/Bumi Borneo/teambb.html">Bumi Borneo Basketball Pontianak</a></li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Elang Pacific/teamepc.html">Elang Pacific Caesar Surabaya</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Indonesia Patriots/teaminp.html">Indonesia Patriots</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Pelita Jaya/teampjb.html">Pelita Jaya Bakrie Jakarta</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Rans PIK/teamrans.html">RANS PIK Basketball Club</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Satria Muda/teamsmp.html">Satria Muda Pertamina Jakarta</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Tangerang Hawks/teamtgh.html">Tangerang Hawks Basketball Club</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Bima Perkasa/teambpj.html">Bima Perkasa Jogja</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Dewa United/teamdub.html">Dewa United Banten</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Evos Thunder/teamevs.html">Evos Thunder Bogor</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Mountain Gold/teammgt.html">Mountain Gold Timika</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Prawira Harum/teamphb.html">Prawira Harum Bandung</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/RJ Amartha/teamrja.html">RJ Amartha Hangtuah Jakarta</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/Satya Wacana/teamsws.html">Satya Wacana Salatiga</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider"/>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../Profile player/West Bandits/teamwbs.html">West Bandits Solo</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Kontak/index.html">Contact</a>
+                </li>
+                <li class="nav-item darkmode">
+                  <input type="checkbox" id="dark-mode">
+                  <label for="dark-mode"></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+        <section id="baliunited">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/bu.png" class="img-fluid rounded-start" alt="logo bali united basketball">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Bali United Basketball</h1>
+                  <p class="card-text">Bali United Basketball Club telah hadir untuk masyarakat Bali dan akan bermain di kompetisi 
+                    tertinggi Indonesian Basketball League (IBL) 2021. Tentu menjadi kabar gembira untuk masyarakat 
+                    Bali karena memiliki tim basket pria profesional pertama dari pulau dewata. Bali United Basketball Club adalah tim basket pertama yang hadir dari pulau Bali dan akan berkompetisi 
+                    di IBL. <br><br>
+                    
+                    Tim basket profesional asal Bali ini hadir membawa visi untuk menjadi tim bola basket yang unggul di 
+                    Indonesia serta menjadi pusat pertumbuhan untuk bakat-bakat olahraga bola basket. Misinya antara lain 
+                    adalah mencetak prestasi di Indonesia Basketball League (IBL), membina bakat muda lokal Bali di bidang 
+                    bola basket, menumbuhkan jaringan komunitas bola basket yang luas di pulau Bali, dan menuju prospek ke 
+                    depan sebagai tim yang go-internasional.</p>
+                    <a class="btn" href="../Profile player/Bali United/teambu.html" role="button">Profile Player</a>
+                  </div>
+                </div>
+              </div>
+              <a class="btn next" href="#bumiborneo" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="bumiborneo">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/bb.png" class="img-fluid rounded-start" alt="logo bumi borneo basketball pontianak">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Bumi Borneo Basketball Pontianak</h1>
+                  <p class="card-text">Bumi Borneo Basketball adalah salah satu pendatang baru IBL. Mulai bergabung pada Kompetisi IBL 2022 dan bermarkas 
+                    di Pontianak, Kalimantan Barat. Bumi Borneo lahir dari sebuah mimpi dan semangat untuk membawa talenta muda terutama 
+                    dari Pontianak dan Kalimantan Barat ke pentas nasional dan internasional. Misi klub ini adalah membangun karakteristik 
+                    sportivitas, integritas dan kolaborasi para anggota dan talenta muda Indonesia serta memberi akses bagi talenta di 
+                    Kalimantan pada umumnya, serta Pontianak dan Kalimantan Barat khususnya.</p>
+                    <a class="btn" href="../Profile player/Bumi Borneo/teambb.html" role="button">Profile Player</a>
+                  </div>
+                </div>
+              </div>
+              <a class="btn next" href="#elangpacific" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="elangpacific">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/epc.png" class="img-fluid rounded-start" alt="logo elang pacific caesar surabaya">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Elang Pacific Caesar Surabaya</h1>
+                  <p class="card-text">Elang Pacific Caesar Surabaya merupakan salah satu klub basket tertua di Indonesia. Setelah sempat terseok-seok 
+                    di liga basket profesional Indonesia, kini mereka menjadi salah satu klub yang menjanjikan. Eksistensi Pacific 
+                    Caesar sebagai klub basket juga tak perlu diragukan lagi, karena mereka sudah lebih dari setengah abad. <br><br>
+        
+                    Klub Pacific berdiri pada tahun 1968. Tepatnya pada tanggal 8 mei 1968 sebagai klub amatir. Pacific didirikan 
+                    oleh Bambang Susanto sejak usia 17 tahun, dan berlajut mengelola klub ini hingga sekarang. Impian Pak Bambang 
+                    dalam mendirikan Pacific sebenarnya sederhana. Dia ingin mendirikan sebuah sekolah basket untuk anak muda, dan 
+                    sekarang Pacific sudah lengkap sebagai klub. Punya tim profesional, pembinaan yang berjalan seiring, serta GOR 
+                    sebagai fasilitas penunjang utama.</p>
+                    <a class="btn" href="../Profile player/Elang Pacific/teamepc.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#indonesiapatriots" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="indonesiapatriots">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/inp.png" class="img-fluid rounded-start" alt="logo indonesia patriots">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Indonesia Patriots</h1>
+                  <p class="card-text">Indonesia Patriots adalah Tim Nasional Indonesia yang akan berlaga di event Internasional mewakili negara Indonesia. 
+                    Terdiri dari gabungan pemain-pemain muda  terbaik mewakili daerah dan klubnya ini dinamakan Patriots untuk mewakili 
+                    kebanggaan sebagai bangsa pejuang. Patriots mempunyai hashtag #bawabangga yang diciptakan oleh salah satu fansnya, 
+                    dengan filosofi sebagai berikut: Pregame: Putra putri terbaik bangsa yang dipilih membawa kebanggan untuk mewakili 
+                    Indonesia berjuang demi prestasi bolabasket tanah air.</p>
+                    <a class="btn" href="../Profile player/Indonesia Patriots/teaminp.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#pelitajaya" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="pelitajaya">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/pjb.png" class="img-fluid rounded-start" alt="logo pelita jaya bakrie harapan">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Pelita Jaya Bakrie Jakarta</h1>
+                  <p class="card-text">Pelita Jaya Basketball Club yang didirikan pada tahun 1987 adalah sebuah klub bola basket bentukan Kelompok 
+                    Usaha Bakrie sebagai sumbangsih kepada dunia olahraga Indonesia, khususnya bola basket. Selama 30 tahun berdiri, 
+                    Pelita Jaya Basketball Club sudah menjuarai berbagai turnamen, termasuk di antaranya tiga kali juara liga basket nasional. <br><br>
+                    
+                    Sebagai salah satu klub bola basket besar di Indonesia, Pelita Jaya Basketball Club memiliki kelompok fans yang 
+                    tersebar hampir di seluruh Indonesia. Mereka menyebut dirinya sebagai PJ Holic. Sampai saat ini, jumlahnya terus 
+                    menerus bertambah seiring dengan meningkatnya performa klub yang mampu menggaet pecinta olahraga bola basket untuk 
+                    juga menyukai Pelita Jaya Basketball Club.</p>
+                    <a class="btn" href="../Profile player/Pelita Jaya/teampjb.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#ranspik" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="ranspik">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/rans.png" class="img-fluid rounded-start" alt="logo rans pik basketball club">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">RANS PIK Basketball Club</h1>
+                  <p class="card-text">RANS PIK Basketball didirikan pada tahun 2021 oleh 3 sahabat, Raffi Ahmad, Rudy Salim, dan Dito Ariotedjo. 
+                    RANS yang merupakan salah satu pemilik platform digital terbesar di Indonesia ingin memberikan kontribusi besar 
+                    untuk Indonesia, salah satunya dengan mengembangkan olahraga di Indonesia. <br><br>
+        
+                    RANS memiliki visi dan misi mengembangkan talenta muda, pro player, serta industri khususnya bola basket dengan 
+                    memberikan pembinaan, serta memberi eksposur di RANS Entertainment untuk menaikkan commercial value atlet Indonesia.</p>
+                    <a class="btn" href="../Profile player/Rans PIK/teamrans.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#satriamuda" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="satriamuda">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/smp.png" class="img-fluid rounded-start" alt="logo satria muda pertamina jakarta">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Satria Muda Pertamina Jakarta</h1>
+                  <p class="card-text">Satria Muda didirikan pada 28 Oktober 1993 sebagai salah satu klub pendatang baru di KOBATAMA (Kompetisi Bola Basket 
+                    Utama), yang merupakan liga basket tertinggi di Indonesia pada waktu itu. Perjalanan Satria Muda dimulai dari divisi 2 
+                    KOBATAMA, tahun 1995, Satria Muda berhasil mendapatkan tiket promosi ke divisi 1 KOBATAMA melalui pertandingan babak 
+                    promosi-degradasi. <br><br>
+        
+                    Pada tahun 1998, Grup Mahaka yang dinahkodai oleh Erick Thohir bersama beberapa rekanan mengambil alih pengelolaan 
+                    klub Satria Muda. Kini, Satria Muda Pertamina berada di bawah naungan PT. Indonesia Sport Venture dan secarakontinyu 
+                    terus berkompetisi di liga basket indonesia atau IBL, serta menyumbangkan pemain-pemainnya untuk memperkuat tim nasional 
+                    Indonesia pada berbagai kesempatan. Selama 26 tahun perjalanannya sebagai sebuah organisasi, Satria Muda telah mampu 
+                    mengumpulkan 10 gelar juara Indonesia. Gelar-gelar juara ini merupakan salah satu bentuk manifestasi dari slogan yang 
+                    dijunjung oleh organisasi Satria Muda, yaitu JUARA INDONESIA INDONESIA JUARA.</p>
+                    <a class="btn" href="../Profile player/Satria Muda/teamsmp.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#tangeranghawks" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="tangeranghawks">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/tgh.png" class="img-fluid rounded-start" alt="logo tangerang hawks basketball club">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Tangerang Hawks Basketball Club</h1>
+                  <p class="card-text">Meski baru masuk menjadi anggota IBL pada kompetisi musim 2022, kiprah Tangerang Hawks dalam pembinaan bola basket 
+                    sudah dimulai lebih awal. Hawks sudah berdiri sejak 2013 dan bahkan sudah memiliki home ground latihan sendiri. Pemilik saham dari PT Pusaka 
+                    Tugu Adiwangsa yang menaungi Tangerang Hawks antara lain adalah PT Persita Tangerang Raya, sebuah klub bola profesional 
+                    yang berasal dari Kabupaten Tangerang, Iskandarsyah R. Datau serta Ahmed Zulfikar I.A. <br><br>
+        
+                    Visi Hawks adalah menjadi Klub Bola Basket Profesional terbaik di Indonesia yang memiliki karakter baik di dalam dan 
+                    di luar lapangan. Misi mereka mengembangkan olahraga bola basket yang berkarakter dan menjadi klub bola basket profesional kebanggaan 
+                    masyarakat Tangerang dan juga Indonesia. Memberikan wadah bagi generasi muda Tangerang untuk menjadi atlet bola basket 
+                    profesional dan memberikan wadah bagi atlet berprestasi untuk menjadi anggota team nasional Indonesia.</p>
+                    <a class="btn" href="../Profile player/Tangerang Hawks/teamtgh.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#bimaperkasa" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="bimaperkasa">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/bpj.png" class="img-fluid rounded-start" alt="logo bima perkasa jogja">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Bima Perkasa Jogja</h1>
+                  <p class="card-text">Bima Perkasa dulu bernama Bima Sakti. Sebuah nama yang memang menunjukkan perbedaan background kedaerahan. Tetapi 
+                    karena sama di kata depannya, sehingga mudah diingat. Bima Sakti dikenal sebagai salah satu galaksi di tata surya kita. 
+                    Sementara, Bima Perkasa dengan logo tokoh pewayangan Bima langsung identik dengan budaya Jawa. Bima adalah ksatria putra 
+                    raja Pandu Dewanata dari Hastinapura. Bima digambarkan sebagai sosok yang kuat, dan putra kedua dari lima bersaudara yang 
+                    dikenal sebagai Pandawa Lima. <br><br>
+        
+                    Nah, kita mulai dari Bima Sakti terlebih dahulu. Klub Bimasakti merupakan hasil merger dari klub-klub basket pada zamannya 
+                    seperti Goodyear dan Bridgestone, nama yang mengadopsi dari merk ban. Yayasan Bimasakti terdaftar secara legal pada tahun 1989, 
+                    yayasan ini dikelola secara gotong royong. Saat ini ketua yayasan dipegang oleh Setyawan Subandi. Mereka bermarkas di GOR Bima 
+                    Sakti berkapasitas 2.500 orang, GOR Bima Sakti berdiri di atas lahan 6.700 meter persegi, GOR ini diresmikan pada tahun 1992. 
+                    Di era 90-an, klub ini berlaga dengan nama tenar Bima Sakti Nikko Steel. Hingga era NBL Indonesia. Namun yang paling utama adalah Bima Perkasa kini menjadi wadah bagi atlet-atlet basket dari Kota Pelajar. Mereka bisa merajut 
+                    mimpi tampil di liga profesional bersama tim asal kota asalnya.</p>
+                    <a class="btn" href="../Profile player/Bima Perkasa/teambpj.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#dewaunited" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="dewaunited">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/dub.png" class="img-fluid rounded-start" alt="logo dewa united banten">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Dewa United Banten</h1>
+                  <p class="card-text">Dewa United dibentuk di tahun 2020 dan mewadahi 3 Cabang olahraga popular di Tanah Air, mulai dari SEPAKBOLA – BASKET 
+                    dan cabang eSPORTS. <br><br>
+    
+                    Dewa united memiliki visi yaitu Veni Vidi Vici , Dewa United berdiri untuk menjadi pemenang,tidak hanya untuk memenangkan pertandingandan industri 
+                    olahraga, tetapi juga menjadi pemenang dihati Masyarakat, dan misi yaitu Membangun Tim yang kuat di setiap Divisi Olahraga dengan system Manajemen yang baik. Membangun hubungan yang kuat 
+                    dengan para fans yang setia termasuk membuat basis penggemar yang baik dengan promosi yang kokoh dan kuat. Memberikan 
+                    peluang yang baik dalam system seleksi pemain yang berkualitas dan professional. Mengikuti berbagai acara resmi baik 
+                    di tingkat nasional dan internasional.</p>
+                    <a class="btn" href="../Profile player/Dewa United/teamdub.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#evosthunder" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="evosthunder">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/evs.png" class="img-fluid rounded-start" alt="logo evos thunder bogor">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Evos Thunder Bogor</h1>
+                  <p class="card-text">Nama Evos sudah berkibar di kalangan penggemar dan pelaku E-Sport. Tim mereka tersebar di Asia Tenggara mulai dari 
+                    Indonesia, Filipina, Thailand dan Singapura. Tahun 2021 ini, Evos ingin mengulang sukses dengan tim bola basket Evos 
+                    Basketball yang berdomisili di Kota Bogor. <br><br>
+        
+                    Evos dibangun dengan keyakinan bahwa dunia akan menjadi tempat yang lebih baik jika orang-orang diberi kesempatan 
+                    untuk mengejar karier pada masing-masing bidang yang mereka cintai. Menjadi yang terbaik berlandaskan pada semangat, 
+                    mentalitas, kerendah hati dan pantang menyerah pada diri setiap anggota tim Evos.</p>
+                    <a class="btn" href="../Profile player/Evos Thunder/teamevs.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#mountaingold" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="mountaingold">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/mgt.png" class="img-fluid rounded-start" alt="logo mountain gold timika">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Mountain Gold Timika</h1>
+                  <p class="card-text">Kisah berdirinya klub yang awalnya bernama NSH GMC tersebut bisa dibilang unik. Pada tahun 1994 silam para pemuda yang 
+                    tinggal di kompleks olahraga eks Gaya Motor Cilincing menjadi pemrakarsa berdirinya sebuah kub basket. Mereka memberi nama 
+                    GMC yang merupakan singkatan dari kata Gaya Motor Club. Antusiasme besar yang ditunjukkan para pemuda tersebut menggugah hati 
+                    Na Sioe Hauw. Seorang pengusaha timah yang akhirnya bersedia mendanai klub tersebut. Kerja sama ini menghasilkan sebuah nama 
+                    klub baru yang dipakai untuk mengikuti kompetisi yaitu NSH GMC. <br><br>
+        
+                    Dimulai dari Maykel S.D. Ferdinandus yang berhasil membawa NSH bisa meramaikan persaingan playoff IBL 2016-2017. Sayangnya 
+                    setelah itu Coach Inyo pamit dari NSH untuk musim berikutnya. Tetapi penerusnya berhasil membawa perubahan untuk NSH. Wahyu 
+                    Widayat Jati yang berhasil mengubah wajah NSH dua musim beruntun. Puncaknya pada IBL 2018-2019 NSH menduduki puncak klasemen 
+                    Divisi Merah di regular season. Meskipun pada akhirnya, NSH harus gugur di semifinal. Potensi NSH sebagai tim basket juga sangat besar. Kini mereka bukan lagi tim yang hanya berisi pemain kelas dua dan tiga. 
+                    NSH berubah menjadi tim yang berisi pemuda-pemuda berbakat yang siap mengguncang persaingan papan atas liga basket Indonesia. 
+                    Di tahun 2020 NSH Jakarta melakukan Merger dengan Klub Basket asal Timika ,dan sehingga menjadi NSH Mountain Gold TIMIKA.</p>
+                    <a class="btn" href="../Profile player/Mountain Gold/teammgt.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#prawiraharum" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="prawiraharum">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/phb.png" class="img-fluid rounded-start" alt="logo prawira harum bandung">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Prawira Harum Bandung</h1>
+                  <p class="card-text">PRAWIRA BANDUNG salah satu klub basket yang bertanding di IBL(INDONESIAN Basketball League), berdiri sejak tahun 
+                    2018, klub basket yang sebelumnya bernama Garuda Bandung pada musim kompetisi IBL 2018/2019 berganti nama menjadi 
+                    Prawira Bandung. Walau tak banyak melakukan perubahan tim Prawira Bandung siap menjadi salah satu penantang kompetisi 
+                    tertinggi basket di indonesia. Sebutan khusus untuk penggemar/pendukung klub Prawira Bandung adalah Family Prawira.</p>
+                    <a class="btn" href="../Profile player/Prawira Harum/teamphb.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#rjamartha" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="rjamartha">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/rja.png" class="img-fluid rounded-start" alt="logo rj amartha hangtuah jakarta">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">RJ Amartha Hangtuah Jakarta</h1>
+                  <p class="card-text">Sejak berdiri tahun 1995, klub basket Hangtuah menjadi salah satu kekuatan yang tak bisa dianggap remeh di basket 
+                    tanah air. Catatan prestasi di masa Kobatama, IBL era lama, NBL Indonesia, hingga IBL era baru cukup baik. Bahkan 
+                    di era NBL Indonesia, Hangtuah selalu menjadi langganan tampil di Championship Series. Hanya saja langkah mereka 
+                    terhenti saat berhadapan dengan kekuatan besar basket Indonesia seperti CLS Knights, Pelita Jaya, Aspac Jakarta 
+                    bahkan Satria Muda. <br><br>
+        
+                    Hangtuah saat ini dikenal sebagai klub dengan skuad muda paling banyak. Para pemain muda itu terus mengasah diri menjadi 
+                    lebih baik di kompetisi basket tanah air. Setelah sempat terpuruk di awal musim kompetisi 2020, mereka kembali menggeliat. 
+                    Rastafari Horongbala berhasil membangkitkan semangat pemain muda Hangtuah untuk kembali mengejar prestasi.</p>
+                    <a class="btn" href="../Profile player/RJ Amartha/teamrja.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#satyawacana" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="satyawacana">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/sws.png" class="img-fluid rounded-start" alt="logo satya wacana salatiga">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">Satya Wacana Salatiga</h1>
+                  <p class="card-text">Satya Wacana Salatiga adalah sebuah tim basket yang berhome base dikota Salatiga, Jawa Tengah. Tim ini mulai terbentuk 
+                    pada tanggal 1 Agustus 2007. Sebelum berlaga di IBL Indonesia seperti saat ini, tim ini bernama pusdiklat Bola Basket 
+                    FTI-UKSW. Saat itu tim FTI-UKSW hanya berlaga di tingkat mahasiswa, dan pada tahun pertamanya berhasil menduduki posisi 
+                    runner up dalam kejurnas antar universitas yang diadakan di Surabaya. <br><br>
+        
+                    Tim Satya Wacana Salatiga telah mengikuti 9 musim liga kasta tertinggi di Indonesia dari tahun 2010 - 2018. Dari tahun 
+                    pertama yang menjadi juru kunci, dan terus berkembang di setiap musim berikutnya dan sekarang telah menjadi salah satu 
+                    tim papan tengah IBL Indonesia. Satya Wacana Salatiga dapat terus berkembang karena tim ini beranggotakan pemain - pemain 
+                    muda yang potensial. Selain pemain, tentunya tim ini juga didukung dengan tim pelatih yang profesional serta manajemen 
+                    yang professional di bawah PT SMS (PT Satya Mitra Sejahtera). Saat ini IBL Idonesia diikuti oleh 10 tim, dan tim Satya 
+                    Wacana adalah satu - satunya tim berbasis perguruan tinggi yang ikut berlaga di IBL Indonesia.</p>
+                    <a class="btn" href="../Profile player/Satya Wacana/teamsws.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+            <a class="btn next" href="#westbandits" role="button">Next</a>
+          </div>
+        </section>
+  
+        <section id="westbandits">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/logo/wbs.png" class="img-fluid rounded-start" alt="logo west bandits solo">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title">West Bandits Solo</h1>
+                  <p class="card-text">Berawal di tahun 2018 sebagai hobi dan komunitas, 2 bersaudara bernama James Winson dan William Ongkowijaya 
+                    mendirikan komunitas ini karena kecintaannya terhadap bola basket. Komunitas ini diharapkan bisa menjadi wadah 
+                    untuk mengembangkan bakat dan talenta bibit-bibit pemain basket. Dari basket jalanan, lalu menjadi juara di divisi 
+                    1 KU 24-35 DKI Jakarta, dan pada September 2020 klub ini dipastikan akan mengikuti kompetisi tertinggi di tanah air 
+                    yaitu Indonesian Basketball League (IBL) dan akan mewakili kota Solo, Jawa Tengah.</p>
+                    <a class="btn" href="../Profile player/West Bandits/teamwbs.html" role="button">Profile Player</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="up">
+          <a href="#baliunited"><img src="../images/icon/up.png" alt="back to top"></a>
+        </div>
+    
+    <Script src="../JavaScript/darkmode.js"></Script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
