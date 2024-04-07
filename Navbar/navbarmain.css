@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Anton&family=Poppins&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&family=Josefin+Sans:wght@400;500;600;700&family=Montserrat:wght@300;500;600;700;800&display=swap");
+
+nav {
+  height: 80px;
+}
+
+.container-fluid img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-ibl {
+  font-family: Gabarito;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.offcanvas-header {
+  padding: 25px;
+}
+
+.offcanvas-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.offcanvas-header h5 {
+  font-family: Gabarito;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+/* darkmode */
+.darkmode {
+    padding-top: 10px;
+}
+
+label {
+  position: relative;
+  width: 120px;
+  height: 60px; 
+  display: block;
+  background: url('../images/dark\ mode/images1.gif');
+  background-size: cover;
+  background-position: center;
+  border: 5px solid rgba(198, 247, 253, 0.3);
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: 1s ease;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  transition: 0.8s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 5px solid rgba(198, 247, 253, 0.3);
+  border-radius: 50%;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  transition: 0.8s ease;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.18);
+}
+
+input:checked ~ label::after {
+  left: 80px;
+  background: #777ba5;
+}
+
+input:checked ~ label::before {
+  left: 80px;
+  border: 10px solid rgba(90, 79, 136, 0.2);
+}
+
+
+input:checked ~ label {
+  background: url('../images/dark\ mode/images2.gif');
+  background-size: cover;
+  background-position: center;
+  border: 10px solid rgba(90, 79, 136, 0.2);
+}
+
+input {
+  display: none;
+}

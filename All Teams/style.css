@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-first: #395886;
+    --blue-body: #d5deef;
+    --white: #f0f3fa;
+    --stroke-color: #f0f3fa;
+    --text-color: #000000;
+    --blue-dropdown: #4268a2;
+    --blue-dropdown-hover: #2f4d7a;
+    --background-card: #f0f3fa;
+    --shadow: 1px 1px 10px 0 #000000;
+    --drop-shadow: drop-shadow(2px 2px 6px #000000);
+    --shadow-nav: 0 2px 10px 2px #000000;
+  }
+  
+  .dark-mode {
+    --blue-first: #022B42;  
+    --blue-body: #032030;
+    --stroke-color: #000000;
+    --text-color: #f0f3fa;
+    --blue-dropdown: #022234;
+    --blue-dropdown-hover: #021d2d;
+    --background-card: #000000;
+    --shadow: 1px 1px 10px 0 #f0f3fa;
+    --drop-shadow: drop-shadow(5px 5px 6px #f0f3fa);
+    --shadow-nav: 0 2px 10px 2px #f0f3fa;
+  }
+
+
+body {
+    font-family: 'Gabarito',sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-body);
+}
+
+/* navbar */
+nav {
+    background-color: var(--blue-first);
+    box-shadow: var(--shadow-nav);
+  }
+  
+  .offcanvas-header {
+    background-color: var(--blue-first);
+    color: var(--white);
+  }
+  
+  .logo-ibl {
+      color: var(--text-color);
+    }
+  
+  .offcanvas-body {
+    background-color: var(--blue-first);
+    color: var(--text-color);
+  }
+  
+  .dropdown-menu li a {
+      color: var(--white);
+    }
+  
+  .dropdown-menu {
+    background-color: var(--blue-dropdown);
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: var(--blue-dropdown-hover);
+    color: var(--white);
+  }
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    height: 70vh;
+    border-radius: 20px;
+    background-color: var(--background-card);
+    color: var(--text-color);
+    box-shadow: var(--shadow);
+}
+
+.card img {
+    width: 300px;
+    filter: var(--drop-shadow);
+}
+
+.card .next {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    background-color: var(--blue-first);
+    color: var(--white);
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body a {
+    width: 150px;
+    color: var(--white);
+    background-color: var(--blue-first);
+}
+
+.card-body a:hover {
+    color: var(--white);
+}
+
+.card-title {
+    text-align: center;
+}
+
+.up img {
+    width: 70px;
+    padding: 20px;
+
+}
+
+.btn {
+    color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.up {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    right: 25px;
+    width: 90px;
+    background-color: var(--blue-first);
+    border-radius: 20px;
+}
