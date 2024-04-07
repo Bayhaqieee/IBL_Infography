@@ -1,0 +1,119 @@
+* {box-sizing:border-box}
+
+:root {
+  --blue-first: #395886;
+  --blue-body: #d5deef;
+  --white: #f0f3fa;
+  --stroke-color: #f0f3fa;
+  --text-color: #000000;
+  --blue-dropdown: #4268a2;
+  --blue-dropdown-hover: #2f4d7a;
+  --shadow-nav: 0 2px 10px 2px #000000;
+}
+
+.dark-mode {
+  --blue-first: #022B42;  
+  --blue-body: #032030;
+  --stroke-color: #000000;
+  --text-color: #f0f3fa;
+  --blue-dropdown: #022234;
+  --blue-dropdown-hover: #021d2d;
+  --shadow-nav: 0 2px 10px 2px #f0f3fa;
+}
+
+body{
+background: linear-gradient(180deg, var(--blue-body), var(--blue-first));
+font-family: 'Gabarito',sans-serif;
+}
+
+/* nav */
+nav {
+  background-color: var(--blue-first);
+  box-shadow: var(--shadow-nav);
+}
+
+.offcanvas-header {
+  background-color: var(--blue-first);
+  color: var(--white);
+}
+
+.logo-ibl {
+    color: var(--white);
+  }
+
+.offcanvas-body {
+  background-color: var(--blue-first);
+  color: var(--text-color);
+}
+
+.dropdown-menu li a {
+    color: var(--white);
+  }
+
+.dropdown-menu {
+  background-color: var(--blue-dropdown);
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--blue-dropdown-hover);
+  color: var(--white);
+}
+
+section {
+  min-height: 100vh;
+}
+
+#show{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 175px 50px 0px 50px;
+}
+
+#show img{
+    width: 400px;
+    height: 450px;
+    object-position: center;
+}
+
+#show h3{
+    grid-column: 2 / span 3;
+    text-align: center;
+    margin: 150px 50px 0px 50px;
+    font-size: 50px;
+    color: var(--text-color);
+}
+
+#clubdesc h3{
+  text-align: center;
+  font-size: 50px;
+  margin: 0px 100px 0px 100px;
+  grid-column: 1 / span 2;
+  color: var(--text-color);
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.carousel-inner {
+  border-radius: 30px;
+}
+
+#clubdesc #clublist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 50px 100px 75px 100px;
+  gap: 20px 20px;
+}
+
+#clubdesc #clublist a{
+  list-style: none;
+  text-decoration: none;
+}
+
+#clubdesc #clublist a img{
+  width: 100px;
+  height: 100px;
+}
