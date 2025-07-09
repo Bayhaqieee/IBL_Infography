@@ -5,61 +5,90 @@
 }
 
 :root {
-  --blue-first: #395886;
-  --blue-body: #d5deef;
-  --white: #f0f3fa;
-  --stroke-color: #f0f3fa;
-  --text-color: #000000;
-  --blue-dropdown: #4268a2;
-  --blue-dropdown-hover: #2f4d7a;
-  --shadow-nav: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
-  --accent-color: #ff6b00; /* Vibrant Orange Accent */
-  --card-bg: rgba(255, 255, 255, 0.5);
+  /* Color Palette */
+  --blue-first: #1A3A6D;     /* Deeper, more saturated blue */
+  --blue-body: #F0F4F9;      /* Lighter, cleaner background */
+  --white: #FFFFFF;
+  --text-color: #121212;
+  --blue-dropdown: #2C59A5;
+  --blue-dropdown-hover: #1A3A6D;
+  --shadow-nav: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --accent-color: #FF5722;   /* Vibrant, energetic orange */
+  --card-bg: rgba(255, 255, 255, 0.7);
   --border-color: rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-display: 'Teko', sans-serif; /* Sporty, bold font */
 }
 
 .dark-mode {
-  --blue-first: #022B42;
-  --blue-body: #032030;
-  --stroke-color: #000000;
-  --text-color: #f0f3fa;
-  --blue-dropdown: #022234;
-  --blue-dropdown-hover: #021d2d;
-  --shadow-nav: 0 2px 10px 2px rgba(240, 243, 250, 0.1);
-  --accent-color: #ff8c00;
-  --card-bg: rgba(255, 255, 255, 0.05);
+  --blue-first: #0D1B2A;
+  --blue-body: #1B263B;
+  --text-color: #E0E1DD;
+  --blue-dropdown: #1B263B;
+  --blue-dropdown-hover: #0D1B2A;
+  --shadow-nav: 0 4px 12px rgba(255, 255, 255, 0.05);
+  --accent-color: #FF7043;
+  --card-bg: rgba(66, 79, 102, 0.5); /* #424F66 */
   --border-color: rgba(255, 255, 255, 0.1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  background: linear-gradient(180deg, var(--blue-body), var(--blue-first));
-  font-family: 'Montserrat', sans-serif;
+  background-color: var(--blue-body);
+  font-family: var(--font-primary);
   color: var(--text-color);
+  transition: background-color 0.4s ease;
 }
 
-/* === Nav Bar === */
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 6vw, 4rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    color: var(--blue-first);
+}
+
+.dark-mode .section-title {
+    color: var(--white);
+}
+
 nav.navbar {
-  background-color: rgba(57, 88, 134, 0.7); /* Semi-transparent for glass effect */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
-  box-shadow: var(--shadow-nav);
-  transition: background-color 0.3s ease;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  box-shadow: none;
+  transition: background-color 0.4s ease-out, backdrop-filter 0.4s ease-out;
 }
 
-.dark-mode nav.navbar {
-    background-color: rgba(2, 43, 66, 0.7);
+nav.navbar.navbar-scrolled {
+  background-color: rgba(26, 58, 109, 0.85); /* Semi-transparent for glass effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* For Safari */
+  box-shadow: var(--shadow-nav);
+}
+
+.dark-mode nav.navbar.navbar-scrolled {
+    background-color: rgba(13, 27, 42, 0.85);
 }
 
 .logo-ibl {
   color: var(--white);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+  font-weight: 600;
 }
 
-/* === Off-Canvas Sidebar Fix === */
 .offcanvas {
-    height: 100vh !important; /* Force full height */
-    width: 380px !important;   /* Give it a more generous width */
-    background-color: var(--blue-first);
-    border-left: 1px solid var(--border-color) !important;
+    height: 100vh !important;
+    width: 350px !important;
+    /* FIX: Changed background to a dark color for contrast */
+    background-color: var(--blue-first); 
+    border-left: none !important;
 }
 
 .offcanvas-header {
@@ -69,9 +98,16 @@ nav.navbar {
 }
 
 .offcanvas-body {
+  /* FIX: Matched the body background to the main offcanvas background */
   background-color: var(--blue-first);
   padding: 1.5rem;
 }
+
+/* This rule is no longer needed with the fix above, so it can be removed.
+.dark-mode .offcanvas-body, .dark-mode .offcanvas{
+    background-color: #0D1B2A;
+}
+*/
 
 .offcanvas-body .navbar-nav .nav-item {
     margin-bottom: 0.5rem;
@@ -80,9 +116,11 @@ nav.navbar {
 .offcanvas-body .navbar-nav .nav-link {
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 0.75rem 1rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 8px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    /* FIX: Explicitly set text color to ensure readability */
+    color: var(--white);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .offcanvas-body .navbar-nav .nav-link:hover,
@@ -93,10 +131,16 @@ nav.navbar {
 
 .dropdown-menu {
   background-color: var(--blue-dropdown);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .dropdown-menu li a {
     color: var(--white);
+    font-weight: 500;
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .dropdown-menu li a:hover {
@@ -104,8 +148,6 @@ nav.navbar {
   color: var(--accent-color);
 }
 
-
-/* === Hero Section === */
 .hero {
     position: relative;
     height: 100vh;
@@ -114,10 +156,20 @@ nav.navbar {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    background-image: url('../images/supp img/3.jpeg');
+    overflow: hidden;
+}
+
+#bgvid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translateX(-50%) translateY(-50%);
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .hero-overlay {
@@ -126,75 +178,106 @@ nav.navbar {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3));
+    z-index: -1;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     padding: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
 }
 
 .hero-logo {
-    width: 120px;
+    width: 130px;
     margin-bottom: 20px;
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 800;
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 400;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 1rem auto 0;
 }
 
-/* === Content Section === */
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+    font-size: 2.5rem;
+    z-index: 3;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(-25px); }
+    60% { transform: translateX(-50%) translateY(-12px); }
+}
+
 .content-section {
-  padding: 80px 0;
+  padding: 100px 0;
   background-color: var(--blue-body);
 }
 
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--text-color);
-  padding-right: 30px;
+.info-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
 }
 
-.description h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--accent-color);
-  margin-bottom: 15px;
+.info-card:hover {
+    background-color: rgba(0,0,0,0.03);
+}
+
+.dark-mode .info-card:hover {
+    background-color: var(--card-bg);
+}
+
+.info-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-right: 20px;
+}
+
+.info-text h4 {
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.info-text p {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 0;
 }
 
 .carousel-inner {
-  border-radius: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-/* === Stats Section === */
 .stats-section {
-    padding: 80px 0;
-    background-color: var(--blue-first);
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--blue-first) 0%, #2C59A5 100%);
     color: var(--white);
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    color: var(--white);
+.dark-mode .stats-section {
+    background: linear-gradient(135deg, #0D1B2A 0%, #1B263B 100%);
 }
 
 .stats-grid {
@@ -207,14 +290,14 @@ nav.navbar {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 15px;
-    padding: 30px;
+    padding: 35px 30px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 .stat-icon {
@@ -223,41 +306,35 @@ nav.navbar {
     margin-bottom: 15px;
 }
 
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1.2;
+.stat-number, .stat-number-text {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.stat-number-text {
+    font-size: 2.5rem; /* Adjust size for text */
+    padding-top: 1rem; /* Align text better vertically */
 }
 
 .stat-label {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.8;
 }
 
-.dark-mode .stat-label {
-    color: rgba(240, 243, 250, 0.7);
-}
-
-/* === Club Description & List === */
 #clubdesc {
-  padding: 80px 0;
+  padding: 100px 0;
   text-align: center;
-}
-
-#clubdesc h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  color: var(--text-color);
+  background-color: var(--blue-body);
 }
 
 #clublist {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
-  margin: 0 10%;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 25px;
+  perspective: 1000px; /* For 3D hover effect */
 }
 
 #clublist a {
@@ -267,25 +344,45 @@ nav.navbar {
   background-color: var(--card-bg);
   border-radius: 15px;
   padding: 20px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
   border: 1px solid var(--border-color);
   text-decoration: none;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
 }
 
 #clublist a:hover {
-  transform: translateY(-10px);
-  background-color: var(--accent-color);
+  transform: translateZ(20px) rotateY(-5deg);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
+
+.dark-mode #clublist a {
+  background-color: #2C3E50;
+}
+.dark-mode #clublist a:hover {
+  background-color: #34495E;
+}
+
 
 #clublist a img {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  filter: grayscale(20%);
-  transition: filter 0.3s ease, transform 0.3s ease;
+  filter: grayscale(10%);
+  transition: filter 0.4s ease, transform 0.4s ease;
 }
 
 #clublist a:hover img {
   filter: grayscale(0%);
   transform: scale(1.1);
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
